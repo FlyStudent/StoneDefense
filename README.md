@@ -28,7 +28,7 @@ _This menu explains some features to the player. Be sure to read it first before
 _differents gameplay overviews_  
 <br>  
 
----
+---  
 ![Upgrade](resources/screens/upgrade.png)  
 _Drag and drop a tower over another to upgrade a capcity!_  
 <br>  
