@@ -1,0 +1,7 @@
+x64
+*.user
+.vs
+build
+.vscode
+annex
+NOTES.md

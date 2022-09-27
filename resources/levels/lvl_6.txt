@@ -1,0 +1,13 @@
+DIRECTION = (up)U
+####################
+####################
+###R------------R###
+W##|WWWWWWWWWWWW|###
+WE#SWWW#WWW#WWWW|###
+W|##WWWWWWWWWW#W|###
+#|##WWWWWWWWWW#W|###
+#|##WWW#WWW#WWWW|###
+#|##WWWWWWWWWWWW|###
+#R--------------R###
+####################
+####################

@@ -1,0 +1,115 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup>
+    <Platform>x64</Platform>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B6B6990A-C2D8-4296-A7EB-727AA8EAC1BD}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup>
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
+    <WindowsTargetPlatformVersion>$([Microsoft.Build.Utilities.ToolLocationHelper]::GetLatestSDKTargetPlatformVersion('Windows', '10.0'))</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>StoneDefense</TargetName>
+    <OutDir>.\build</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>StoneDefense</TargetName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>include;$(ExternalFolder)\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ExternalFolder)\x86_64-pc-windows-msvc\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gp.lib</AdditionalDependencies>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Copy the resources folder in build folder</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src/main.cpp" />
+    <ClCompile Include="src/game.cpp" />
+    <ClCompile Include="src/map.cpp" />
+    <ClCompile Include="src/ressources.cpp" />
+    <ClCompile Include="src/collision_engine.cpp" />
+    <ClCompile Include="src/input_engine.cpp" />
+    <ClCompile Include="src/vector2.cpp" />
+    <ClCompile Include="src/utility_function.cpp" />
+    <ClCompile Include="src/primitive2.cpp" />
+    <ClCompile Include="src/enums.cpp" />
+    <ClCompile Include="src/entity/entity.cpp" />
+    <ClCompile Include="src/entity/castle.cpp" />
+    <ClCompile Include="src/entity/mouse_entity.cpp" />
+    <ClCompile Include="src/entity/shop_entity.cpp" />
+    <ClCompile Include="src/entity/button_entity.cpp" />
+    <ClCompile Include="src/entity/enemy/enemy_spawn.cpp" />
+    <ClCompile Include="src/entity/enemy/enemy.cpp" />
+    <ClCompile Include="src/entity/enemy/weak.cpp" />
+    <ClCompile Include="src/entity/enemy/strong.cpp" />
+    <ClCompile Include="src/entity/enemy/very_strong.cpp" />
+    <ClCompile Include="src/entity/enemy/healer.cpp" />
+    <ClCompile Include="src/entity/tower/tower.cpp" />
+    <ClCompile Include="src/entity/tower/tower_button.cpp" />
+    <ClCompile Include="src/entity/tower/bullet.cpp" />
+    <ClCompile Include="src/entity/tower/standard.cpp" />
+    <ClCompile Include="src/entity/tower/slowing.cpp" />
+    <ClCompile Include="src/entity/tower/explosive.cpp" />
+    <ClCompile Include="src/entity/tower/golden.cpp" />
+    <ClCompile Include="src/entity/component/component.cpp" />
+    <ClCompile Include="src/entity/component/button.cpp" />
+    <ClCompile Include="src/entity/component/drag_drop.cpp" />
+    <ClCompile Include="src/entity/component/enemy_wave.cpp" />
+    <ClCompile Include="src/entity/component/life.cpp" />
+    <ClCompile Include="src/entity/component/lifebar.cpp" />
+    <ClCompile Include="src/entity/component/timer.cpp" />
+    <ClCompile Include="src/entity/component/timerbar.cpp" />
+    <ClCompile Include="src/entity/component/gold_dealer.cpp" />
+    <ClCompile Include="src/entity/component/gold_per_second.cpp" />
+    <ClCompile Include="src/entity/component/path_finding.cpp" />
+    <ClCompile Include="src/entity/component/bullet_move.cpp" />
+    <ClCompile Include="src/entity/component/mouse_move.cpp" />
+    <ClCompile Include="src/entity/component/collider.cpp" />
+    <ClCompile Include="src/entity/component/circle_collider.cpp" />
+    <ClCompile Include="src/entity/component/box_collider.cpp" />
+    <ClCompile Include="src\entity\coin_item.cpp" />
+    <ClCompile Include="src\entity\coin_particle.cpp" />
+    <ClCompile Include="src\entity\component\coin_spawner.cpp" />
+    <ClCompile Include="src\entity\component\hide_in_pause.cpp" />
+    <ClCompile Include="src\entity\component\particle.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Targets" />
+</Project>

@@ -1,0 +1,13 @@
+DIRECTION = (down)D
+WWWWWWWWWWWWWWWWWWWW
+W###R------------R#W
+W###|W####WWW####|#W
+WWWW|###R-----R##|#W
+WWR-L#W#|#####|#W|#W
+W#|W##W#|#S###|W#|#W
+WWR-L###|#|WWW|##|#W
+W#WW|###R-R#WW|##|#W
+W###|WWW#####W|#WEWW
+W###R---------R##W#W
+W#######WWWW#######W
+WWWWWWWWWWWWWWWWWWWW

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src/main.cpp" />
+    <ClCompile Include="src/game.cpp" />
+    <ClCompile Include="src/map.cpp" />
+    <ClCompile Include="src/ressources.cpp" />
+    <ClCompile Include="src/entity/component/component.cpp" />
+    <ClCompile Include="src/entity/component/box_collider.cpp">
+      <Filter>Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/component/circle_collider.cpp">
+      <Filter>Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/component/drag_drop.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src/input_engine.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/mouse_entity.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/component/mouse_move.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/component/collider.cpp">
+      <Filter>Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/tower/bullet.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/component/bullet_move.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/enemy/enemy.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/entity.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/enemy/healer.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/enemy/strong.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/enemy/weak.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/castle.cpp">
+      <Filter>building</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/tower/golden.cpp">
+      <Filter>building</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/tower/slowing.cpp">
+      <Filter>building</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/tower/standard.cpp">
+      <Filter>building</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/tower/tower.cpp">
+      <Filter>building</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/enemy/very_strong.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/tower/explosive.cpp">
+      <Filter>building</Filter>
+    </ClCompile>
+    <ClCompile Include="src/enums.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src/collision_engine.cpp">
+      <Filter>Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/component/button.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/button_entity.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/component/enemy_wave.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/enemy/enemy_spawn.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/component/gold_per_second.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/component/lifebar.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/component/life.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/component/path_finding.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/shop_entity.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/tower/tower_button.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src/utility_function.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/component/timer.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/component/timerbar.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src/primitive2.cpp">
+      <Filter>Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="src/vector2.cpp">
+      <Filter>Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="src/entity/component/gold_dealer.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\coin_particle.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\component\particle.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\component\hide_in_pause.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\coin_item.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\component\coin_spawner.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Collider">
+      <UniqueIdentifier>{6a645095-22eb-4354-ac4e-adc62ec8f192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{c08ed617-df4e-489d-ac63-d6fc4316c8a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entity">
+      <UniqueIdentifier>{e929a62b-9350-413e-80f5-a7c93a1544cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="building">
+      <UniqueIdentifier>{ee79b747-2e59-4195-b824-1f773fab4836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{42ac9bf4-9b66-4afe-8757-9059642f7107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Maths">
+      <UniqueIdentifier>{c629eb9f-57f9-413c-9ce3-22d92bd972d1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
